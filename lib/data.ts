@@ -33,6 +33,38 @@ export const links = [
   },
 ] as const;
 
+
+
+export const profileData = [
+  {
+    name: "Leetcode",
+    link: "https://leetcode.com/IchigoGoes/",
+  },
+  {
+    name: "CodeChef",
+    link: "https://www.codechef.com/users/chitransh34",
+  },
+  {
+    name: "GFG",
+    link: "https://auth.geeksforgeeks.org/user/chitranshjawere/practice",
+  },
+  {
+    name: "CodeForces",
+    link: "https://codeforces.com/profile/chitransh34",
+  },
+] as const;
+
+export const subjectSkillsData = [
+  "OOPS",
+  "Operating System",
+  "Computer Networks",
+  "Data Structures",
+  "Algorithms",
+  "DBMS"
+] as const;
+
+
+
 export const experiencesData = [
   {
     title: "Graduated bootcamp",
@@ -94,14 +126,9 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
+  "Github",
+  "C++",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "MYSQL",
   "Framer Motion",
 ] as const;
