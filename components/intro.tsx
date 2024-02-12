@@ -52,15 +52,15 @@ const Intro = () => {
                                          {/* group hovering */}
             <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950 transition-all'>Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition '/></Link>
       
-        <a className='group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 transition-all cursor-pointer border border-black/10' href='/CV.pdf' download={true}>Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/>
+        <a className='group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 transition-all cursor-pointer border border-black/10 ' href='/CV.pdf' download={true}>Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/>
         </a>
 
         <div className='flex flex-row gap-3'>
-        <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:scale-[1.15] transition cursor-pointer border border-black/10' href="https://www.linkedin.com/in/chitransh-jawere-878497232/" target="_blank">
+        <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:scale-[1.15] transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60' href="https://www.linkedin.com/in/chitransh-jawere-878497232/" target="_blank">
             <BsLinkedin/>
         </a>
 
-        <a className='bg-white text-gray-700 text-[1.35rem] p-4 flex items-center gap-2 rounded-full hover:scale-[1.15] transition cursor-pointer border border-black/10' href="https://github.com/Chitransh-j" target="_blank">
+        <a className='bg-white text-gray-700 text-[1.35rem] p-4 flex items-center gap-2 rounded-full hover:scale-[1.15] transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60' href="https://github.com/Chitransh-j" target="_blank">
             <BsGithub/>
         </a>
         </div>

@@ -1,7 +1,6 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { FaBook, FaGraduationCap } from "react-icons/fa";
+import { LuGraduationCap,LuSchool } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -24,7 +23,7 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Background",
     hash: "#experience",
   },
   {
@@ -67,51 +66,43 @@ export const subjectSkillsData = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Indore Public School",
+    location: "Indore, MP",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "I completed my schooling from Indore Public School, Indore. I scored 93.6% in 10th and 95.6% in 12th.",
+    icon: React.createElement(FaBook),
+    date: "2011-2021",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "National Institute of Technology Raipur",
+    location: "Raipur, CG",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
+      "I am currenly enrolled in Bachelors of Engineering at National Institute of Raipur. My current CPI (till 5th Semester) is 8.71 .",
+    icon: React.createElement(FaGraduationCap),
     date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Manchester City Website",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      " I Designed a completely dyanmic Front-end for my Favourite Football Club.",
+    tags: ["React", "Vanilla CSS","AOS","Canva"],
     imageUrl: corpcommentImg,
   },
   {
     title: "rmtDev",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Sahyog Hackathon Group Project. I was the API Handler and the ReactJS in-charge .",
+    tags: ["React", "Tailwind", "SheetDB", "FIGMA","Git"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "CryptoTracker",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A public web app for quick insights on the current trends of Cryptocurrency.",
+    tags: ["React", "Vanilla CSS"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;

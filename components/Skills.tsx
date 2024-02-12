@@ -104,8 +104,8 @@ export default function Skills() {
               <ul className="p-5">
                 {
                   profileData.map((profile,index)=>(
-                    <motion.li className="bg-slate-300 border font-semibold Black rounded-xl px-5 py-2 m-2 hover:bg-slate-100 cursor-pointer
-                    even:ml-[5rem] odd:mr-[5rem]"
+                    <motion.li className="bg-slate-300 border font-semibold Black rounded-xl px-5 py-2 m-5 hover:bg-slate-100 cursor-pointer
+                    even:ml-[5rem] odd:mr-[5rem] dark:bg-gray-400 dark:text-black dark:hover:bg-white"
                     key={index}
                     variants={fadeInAnimationVariants1}
                     initial="initial"

@@ -25,9 +25,7 @@ export default function About() {
         at <br/> <span className="font-bold"><a className="" href="https://www.nitrr.ac.in/" target="_blank"> National Institute of Technology Raipur. {" "}</a></span>
         I started learning <span className="font-medium"> Algorithms </span> and <span className="font-medium">Web Development</span>  as a part of the curriculum {" "}
         and immediately fell in love with both of them.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of figuring out an optimal solution to a problem. My core stack
+       My core stack
         is{" "}
         <span className="font-medium">
           React, Next.js, Node.js, and Express.js
@@ -39,10 +37,7 @@ export default function About() {
       </p>
 
       <p>
-        <span className="italic">Apart from Coding </span>, I enjoy playing
-        video games, watching football and also movies.  As a matter of fact I am a Gold III title-holder for Colt in Brawl Stars, <span className="font-medium">&apos; The Pretty &apos; .</span>
-         {" "}I also enjoy{" "}
-        <span className="font-medium">learning new things</span>.
+         I am also 1700+ rated on <span className="font-semibold">LeetCode</span> and ⭐⭐⭐ at <span className="font-semibold">CodeChef</span>. <br/>{" "}
         <span className="font-medium"></span>. 
       </p>
     </motion.section>
