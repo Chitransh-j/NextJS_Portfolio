@@ -92,7 +92,7 @@ export const projectsData = [
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "C-Sync",
     description:
       "Sahyog Hackathon Group Project. I was the API Handler and the ReactJS in-charge .",
     tags: ["React", "Tailwind", "SheetDB", "FIGMA","Git"],
