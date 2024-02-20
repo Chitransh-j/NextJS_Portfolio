@@ -28,5 +28,5 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 2. Install dependencies and run
    ```bash
     npm install
-    npm start
+    npm run dev
    ```
