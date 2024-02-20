@@ -1,7 +1,26 @@
+###### This is my Portoflio as a full Stack Developer
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
+- I have used Nextjs for SEO.
+- Tailwind for Faster Styling.
+- TypeScript for Type-safety.
+- Custom Hooks for Abstraction for logics.
+- Framer motion for advanced animations.
+- Dark Mode and Light Mode that persists as you reload and initally adjusts to your device theme.
+- Deployed on Vercel.
+
+> The Portoflio is made to meet with the *Modern Standards* of TypeScript, Nextjs and Tailwind. 
+
+
+---
+
+#### About project
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+To run it 
 First, run the development server:
 
 ```bash
@@ -16,19 +35,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+#### :gear: Developer Installation
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*You must have NPM and Git installed in your PC*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone repo and change into directory
+   ```bash
+   git clone https://github.com/Chitransh-j/NextJS_Portfolio
+   ```
+2. Install dependencies and run
+   ```bash
+    npm install
+    npm start
+   ```
