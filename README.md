@@ -1,4 +1,4 @@
-###### This is my Portoflio as a full Stack Developer
+## This is my Portoflio as a full Stack Developer
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -11,32 +11,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - Dark Mode and Light Mode that persists as you reload and initally adjusts to your device theme.
 - Deployed on Vercel.
 
-> The Portoflio is made to meet with the *Modern Standards* of TypeScript, Nextjs and Tailwind. 
-
+> The Portfolio is made to meet with the *Modern Standards* of TypeScript, Nextjs and Tailwind. 
 
 ---
+<br/>
 
-#### About project
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-To run it 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-
-#### :gear: Developer Installation
+## :gear: Developer Installation
 
 
 *You must have NPM and Git installed in your PC*
@@ -48,5 +28,5 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 2. Install dependencies and run
    ```bash
     npm install
-    npm start
+    npm run dev
    ```
