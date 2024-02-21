@@ -37,7 +37,7 @@ export default function About() {
       </p>
 
       <p>
-         I am also 1700+ rated on <span className="font-semibold">LeetCode</span> and ⭐⭐⭐ at <span className="font-semibold">CodeChef</span>. <br/>{" "}
+         I am also 1740+ rated on <span className="font-semibold">LeetCode</span> and ⭐⭐⭐ at <span className="font-semibold">CodeChef</span>. <br/>{" "}
         <span className="font-medium"></span>. 
       </p>
     </motion.section>
