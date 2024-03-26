@@ -79,7 +79,7 @@ export const experiencesData = [
     description:
       "I am currenly enrolled in Bachelors of Engineering at National Institute of Raipur. My current CPI (till 5th Semester) is 8.71 .",
     icon: React.createElement(FaGraduationCap),
-    date: "2019 - 2021",
+    date: "Dec 2021 - Present",
   },
 ] as const;
 
