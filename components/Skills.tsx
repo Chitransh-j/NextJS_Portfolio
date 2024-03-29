@@ -5,8 +5,8 @@ import SectionHeading from "./section-heading";
 import { profileData, skillsData, subjectSkillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import Lottie from 'react-lottie';
-import coding from '@/public/coding.json'
+import Lottie from "react-lottie";
+import coding from "@/public/coding.json";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -17,7 +17,7 @@ const fadeInAnimationVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.05 * index, 
+      delay: 0.05 * index,
     },
   }),
 };
@@ -31,7 +31,7 @@ const fadeInAnimationVariants1 = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.05 * index, 
+      delay: 0.05 * index,
     },
   }),
 };
@@ -39,14 +39,14 @@ const fadeInAnimationVariants1 = {
 export default function Skills() {
   const defaultOptions = {
     loop: true,
-    autoplay: true, 
+    autoplay: true,
     animationData: coding,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
+      preserveAspectRatio: "xMidYMid slice",
+    },
   };
 
-  const { ref } = useSectionInView("Skills",0.1);
+  const { ref } = useSectionInView("Skills", 0.1);
 
   return (
     <section
@@ -84,15 +84,19 @@ export default function Skills() {
             viewport={{
               once: true,
             }}
-            custom={index+ skillsData.length}
+            custom={index + skillsData.length}
           >
             {skill}
           </motion.li>
         ))}
       </ul>
       <div className="flex flex-wrap flex-row mt-10 items-center justify-center">
-            <div className="m-auto"><Lottie options={defaultOptions} height={400} width={400}/></div>
-            <div className="m-auto"><motion.span className="font-bold text-2xl"
+        <div className="m-auto">
+          <Lottie options={defaultOptions} height={400} width={400} />
+        </div>
+        <div className="m-auto">
+          <motion.span
+            className="font-bold text-2xl"
             key={1}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -100,25 +104,31 @@ export default function Skills() {
             viewport={{
               once: true,
             }}
-            > Profiles :</motion.span>
-              <ul className="p-5">
-                {
-                  profileData.map((profile,index)=>(
-                    <motion.li className="bg-slate-300 border font-semibold Black rounded-xl px-5 py-2 m-5 hover:bg-slate-100 cursor-pointer
+          >
+            {" "}
+            Profiles :
+          </motion.span>
+          <ul className="p-5">
+            {profileData.map((profile, index) => (
+              <motion.li
+                className="bg-slate-50 border font-semibold Black rounded-xl px-5 py-2 m-5 hover:bg-slate-100 cursor-pointer
                     even:ml-[5rem] odd:mr-[5rem] dark:bg-gray-400 dark:text-black dark:hover:bg-white"
-                    key={index}
-                    variants={fadeInAnimationVariants1}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    custom={index+ skillsData.length+subjectSkillsData.length}>
-                    <a href={profile.link} target="_blank">{profile.name}</a></motion.li>
-                      ))
-                }
-              </ul>
-            </div>
+                key={index}
+                variants={fadeInAnimationVariants1}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                custom={index+skillsData.length}
+              >
+                <a href={profile.link} target="_blank">
+                  {profile.name}
+                </a>
+              </motion.li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
