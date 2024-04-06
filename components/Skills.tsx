@@ -90,7 +90,14 @@ export default function Skills() {
           </motion.li>
         ))}
       </ul>
-      <div className="flex flex-wrap flex-row mt-10 items-center justify-center">
+      <motion.div className="flex flex-wrap flex-row mt-10 items-center justify-center"
+        initial={{
+          opacity:0,
+      }}
+      whileInView={{opacity:1}}
+
+      transition={{duration:2.5}}
+      >
         <div className="m-auto">
           <Lottie options={defaultOptions} height={400} width={400} />
         </div>
@@ -129,7 +136,7 @@ export default function Skills() {
             ))}
           </ul>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

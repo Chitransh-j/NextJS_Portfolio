@@ -55,7 +55,7 @@ export const profileData = [
 
 export const subjectSkillsData = [
   "OOPS",
-  "Operating System",
+  "OS",
   "Computer Networks",
   "Data Structures",
   "Algorithms",
