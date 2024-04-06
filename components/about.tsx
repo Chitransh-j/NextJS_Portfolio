@@ -22,7 +22,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Currently, I'm pursuing a{" "}
+        Currently, I&apos;m pursuing a{" "}
         <span className="font-medium">Bachelor of Technology</span> degree in{" "}
         <span className="italic">Information Technology</span> at <br />{" "}
         <span className="font-bold">
