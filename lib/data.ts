@@ -1,10 +1,9 @@
 import React from "react";
 import { FaBook, FaGraduationCap } from "react-icons/fa";
-import { LuGraduationCap,LuSchool } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
-
+import mancity from "@/public/mancity.png";
+import csync from "@/public/csync.png";
+import cryptrack from "@/public/cryptrack.png";
+import journalize from '@/public/journalize.png'
 export const links = [
   {
     name: "Home",
@@ -89,21 +88,28 @@ export const projectsData = [
     description:
       " I Designed a completely dyanmic Front-end for my Favourite Football Club.",
     tags: ["React", "Vanilla CSS","AOS","Canva"],
-    imageUrl: corpcommentImg,
+    imageUrl: mancity,
   },
   {
     title: "C-Sync",
     description:
       "Sahyog Hackathon Group Project. I was the API Handler and the ReactJS in-charge .",
     tags: ["React", "Tailwind", "SheetDB", "FIGMA","Git"],
-    imageUrl: rmtdevImg,
+    imageUrl: csync,
+  },
+  {
+    title: "Journalize",
+    description:
+      "Journalize simplifies the process of journaling, providing a secure and intuitive platform for documenting your thoughts.",
+    tags: ["ElectronJS", "MSI Packager","Nodejs"],
+    imageUrl: journalize,
   },
   {
     title: "CryptoTracker",
     description:
       "A public web app for quick insights on the current trends of Cryptocurrency.",
     tags: ["React", "Vanilla CSS"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: cryptrack,
   },
 ] as const;
 
@@ -121,5 +127,7 @@ export const skillsData = [
   "C++",
   "Express",
   "MYSQL",
+  "Electron.js",
   "Framer Motion",
+  "MongoDB"
 ] as const;

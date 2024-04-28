@@ -7,8 +7,16 @@ import {motion} from 'framer-motion'
 import { useSectionInView } from '@/lib/hooks'
 import {sendEmail} from '@/actions/sendEmail'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 const Contact = () => {
     const {ref} = useSectionInView("Contact",0.3)
+
+    const notify = () => {
+        toast("Message sent Successfully !");
+    };
 
   return (
     <motion.section ref={ref} id="contact" className='mb-20 sm:mb-28 scroll-mt-28 w-[min(100%,38rem)] text-center'
@@ -24,7 +32,7 @@ const Contact = () => {
 
         <form className='mt-10 flex flex-col dark:text-black' action={ async (formData) =>{
             await sendEmail(formData)
-
+            notify();
         }}>
             <input name="senderEmail"  className='h-14 rounded-lg borderBlack px-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none' required maxLength={500} type="email" placeholder=' Email'/>
             <textarea maxLength={5000} name="message" required className='h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none' placeholder='Your Message'/>
@@ -32,6 +40,7 @@ const Contact = () => {
             <button className=' m-auto group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65' type="submit" >Submit <FaPaperPlane className='text-xs opacity-70 transition-all group-hover:-translate-y-1 group-hover:translate-x-1 '/> {" "}</button>
 
         </form>
+        <ToastContainer />
     </motion.section>
 
   )
