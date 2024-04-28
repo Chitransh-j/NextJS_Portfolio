@@ -3,7 +3,9 @@ import { FaBook, FaGraduationCap } from "react-icons/fa";
 import mancity from "@/public/mancity.png";
 import csync from "@/public/csync.png";
 import cryptrack from "@/public/cryptrack.png";
-import journalize from '@/public/journalize.png'
+import journalize from '@/public/journalize.png';
+import farmstack from '@/public/farmstack.jpeg'
+
 export const links = [
   {
     name: "Home",
@@ -110,6 +112,13 @@ export const projectsData = [
       "A public web app for quick insights on the current trends of Cryptocurrency.",
     tags: ["React", "Vanilla CSS"],
     imageUrl: cryptrack,
+  },
+  {
+    title: "FarmStack",
+    description:
+      " A full stack Saas application with basic CRUD and next-auth. ",
+    tags: ["Nextjs", "Next-auth","MongoDB","Reactjs","Tailwind"],
+    imageUrl: farmstack,
   },
 ] as const;
 
