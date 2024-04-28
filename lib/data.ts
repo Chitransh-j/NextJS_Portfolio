@@ -100,7 +100,7 @@ export const projectsData = [
       "Sahyog Hackathon Group Project. I was the API Handler and the ReactJS in-charge .",
     tags: ["React", "Tailwind", "SheetDB", "FIGMA","Git"],
     imageUrl: csync,
-    link : "https://cryptotracker-online-react.netlify.app/"
+    link : "https://csync.netlify.app/"
   },
   {
     title: "Journalize",
