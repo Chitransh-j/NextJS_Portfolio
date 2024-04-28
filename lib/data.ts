@@ -81,6 +81,7 @@ export const experiencesData = [
       "I am currenly enrolled in Bachelors of Engineering at National Institute of Raipur. My current CPI (till 5th Semester) is 8.71 .",
     icon: React.createElement(FaGraduationCap),
     date: "Dec 2021 - Present",
+
   },
 ] as const;
 
@@ -91,6 +92,7 @@ export const projectsData = [
       " I Designed a completely dyanmic Front-end for my Favourite Football Club.",
     tags: ["React", "Vanilla CSS","AOS","Canva"],
     imageUrl: mancity,
+    link : "https://manchester-city-react.netlify.app/"
   },
   {
     title: "C-Sync",
@@ -98,6 +100,7 @@ export const projectsData = [
       "Sahyog Hackathon Group Project. I was the API Handler and the ReactJS in-charge .",
     tags: ["React", "Tailwind", "SheetDB", "FIGMA","Git"],
     imageUrl: csync,
+    link : "https://cryptotracker-online-react.netlify.app/"
   },
   {
     title: "Journalize",
@@ -105,6 +108,7 @@ export const projectsData = [
       "Journalize simplifies the process of journaling, providing a secure and intuitive platform for documenting your thoughts.",
     tags: ["ElectronJS", "MSI Packager","Nodejs"],
     imageUrl: journalize,
+    link: 'https://github.com/Chitransh-j/journalize'
   },
   {
     title: "CryptoTracker",
@@ -112,6 +116,7 @@ export const projectsData = [
       "A public web app for quick insights on the current trends of Cryptocurrency.",
     tags: ["React", "Vanilla CSS"],
     imageUrl: cryptrack,
+    link : "https://cryptotracker-online-react.netlify.app/"
   },
   {
     title: "FarmStack",
@@ -119,6 +124,7 @@ export const projectsData = [
       " A full stack Saas application with basic CRUD and next-auth. ",
     tags: ["Nextjs", "Next-auth","MongoDB","Reactjs","Tailwind"],
     imageUrl: farmstack,
+    link : "https://github.com/Chitransh-j/farmStack"
   },
 ] as const;
 
