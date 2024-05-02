@@ -1,6 +1,5 @@
-"use client";
-
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -12,9 +11,18 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact", 0.3);
-
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const notify = () => {
     toast("Message sent Successfully !");
+    setIsSubmitting(true);
+    // Reload the page after displaying the toast
+    setTimeout(()=>{
+      location.reload();
+      return false;
+    },4100)
+    setTimeout(()=>{
+      window.scrollTo(0, 0); 
+    },4000)
   };
 
   return (
@@ -39,7 +47,9 @@ const Contact = () => {
 
       <form
         className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
+        onSubmit={async (event) => {
+          event.preventDefault(); // Prevent default form submission
+          const formData = new FormData(event.currentTarget as HTMLFormElement);
           await sendEmail(formData);
           notify();
         }}
@@ -63,6 +73,7 @@ const Contact = () => {
         <button
           className=" m-auto group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
           type="submit"
+          disabled={isSubmitting}
         >
           Submit{" "}
           <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:-translate-y-1 group-hover:translate-x-1 " />{" "}
@@ -74,3 +85,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
