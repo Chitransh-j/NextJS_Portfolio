@@ -78,7 +78,7 @@ export const experiencesData = [
     title: "National Institute of Technology Raipur",
     location: "Raipur, CG",
     description:
-      "I am currenly enrolled in Bachelors of Engineering at National Institute of Raipur. My current CPI (till 5th Semester) is 8.71 .",
+      "I am currenly enrolled in Bachelors of Technology at National Institute of Raipur in the brach Information Tech. My current CPI (till 6th Semester) is 8.76.",
     icon: React.createElement(FaGraduationCap),
     date: "Dec 2021 - Present",
 

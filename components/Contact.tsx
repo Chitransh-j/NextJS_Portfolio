@@ -19,10 +19,10 @@ const Contact = () => {
     setTimeout(()=>{
       location.reload();
       return false;
-    },4100)
+    },5100)
     setTimeout(()=>{
       window.scrollTo(0, 0); 
-    },4000)
+    },5000)
   };
 
   return (
