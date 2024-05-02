@@ -45,8 +45,8 @@ export default function About() {
       </p>
 
       <p>
-        I hold a rating of 1848 on{" "}
-        <span className="font-semibold">LeetCode</span> and am ⭐⭐⭐ on{" "}
+        I am a knight (rated 1875) on{" "}
+        <span className="font-semibold">LeetCode</span> and  ⭐⭐⭐ on{" "}
         <span className="font-semibold">CodeChef</span>. <br />{" "}
         <span className="font-medium"></span>
       </p>
