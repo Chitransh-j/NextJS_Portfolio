@@ -19,7 +19,7 @@ const Contact = () => {
     setTimeout(()=>{
       location.reload();
       return false;
-    },5300)
+    },5500)
     setTimeout(()=>{
       window.scrollTo(0, 0); 
     },5000)
