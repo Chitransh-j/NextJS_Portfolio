@@ -12,6 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const { ref } = useSectionInView("Contact", 0.3);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  
   const notify = () => {
     toast("Message sent Successfully !");
     setIsSubmitting(true);
@@ -23,6 +24,14 @@ const Contact = () => {
     setTimeout(()=>{
       window.scrollTo(0, 0); 
     },5000)
+  };
+
+  const handleSubmit = async (event:any) => {
+    event.preventDefault(); // Prevent default form submission
+    const formData = new FormData(event.currentTarget);
+    await sendEmail(formData);
+    notify();
+    event.target.reset(); // Reset the form fields after submission
   };
 
   return (
@@ -47,12 +56,7 @@ const Contact = () => {
 
       <form
         className="mt-10 flex flex-col dark:text-black"
-        onSubmit={async (event) => {
-          event.preventDefault(); // Prevent default form submission
-          const formData = new FormData(event.currentTarget as HTMLFormElement);
-          await sendEmail(formData);
-          notify();
-        }}
+        onSubmit={handleSubmit}
       >
         <input
           name="senderEmail"
@@ -85,4 +89,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
