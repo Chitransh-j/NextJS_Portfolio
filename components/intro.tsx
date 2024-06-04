@@ -51,7 +51,7 @@ const Intro = () => {
         interest in Problem Solving and Algorithms. I also love building{" "}
         <span className="italic">Websites</span>. My focus is{" "}
         <span className="">
-          <span className="font-bold">MERN</span> Stack
+          <span className="font-bold">Nextjs</span> 
         </span>
         .
       </motion.h1>
