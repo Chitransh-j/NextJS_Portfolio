@@ -5,7 +5,7 @@ import csync from "@/public/csync.png";
 import cryptrack from "@/public/cryptrack.png";
 import journalize from '@/public/journalize.png';
 import farmstack from '@/public/farmstack.jpeg'
-
+import mentibuddy from '@/public/mentibuddy.png'
 export const links = [
   {
     name: "Home",
@@ -86,6 +86,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Mentibuddy",
+    description:
+      " I created a full stack web application for mental coaches",
+    tags: ["Nextjs", "TypeScript","Prisma","React-Query","Zod"],
+    imageUrl: mentibuddy,
+    link : "https://mentibuddy.vercel.app/"
+  },
   {
     title: "Manchester City Website",
     description:
