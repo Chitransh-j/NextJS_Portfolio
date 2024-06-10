@@ -48,8 +48,8 @@ const Intro = () => {
       >
         <span className="font-bold">{`Hello, I'm Chitransh.`}</span> {`I'm an`}{" "}aspiring
         <span className="font-bold"> Full-Stack Developer</span> with{" "} a deep
-        interest in serverless utilies. I love Problem Solving and Algorithms.{" "} I am also a 
-        competitive programmer at times
+        interest with <span className="font-bold">network designs.</span> I love Problem Solving and Algorithms.{" "} I am also a casual
+        competitive programmer 
         <span className="italic"></span>. <br/>My focus is{" "}
         <span className="">
           <span className="font-bold">Nextjs</span> 
