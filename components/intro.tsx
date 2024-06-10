@@ -46,10 +46,11 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">{`Hello, I'm Chitransh.`}</span> {`I'm an`}{" "}
-        <span className="font-bold">aspiring Full-Stack Developer</span> with{" "}
-        interest in Problem Solving and Algorithms. I also love building{" "}
-        <span className="italic">Websites</span>. My focus is{" "}
+        <span className="font-bold">{`Hello, I'm Chitransh.`}</span> {`I'm an`}{" "}aspiring
+        <span className="font-bold"> Full-Stack Developer</span> with{" "} a deep
+        interest in serverless utilies. I love Problem Solving and Algorithms.{" "} I am also a 
+        competitive programmer at times
+        <span className="italic"></span>. <br/>My focus is{" "}
         <span className="">
           <span className="font-bold">Nextjs</span> 
         </span>
